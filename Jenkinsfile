@@ -2,16 +2,14 @@ pipeline {
      agent any
         stages {
            stage ("Build") {
+			  steps {
                echo "Hello from Build"
-               }
-            stage ("Dev") {
+                   }
+			   }
+			 stage ("Dev") {
+			  steps {
                echo "Hello from Dev"
-               }
-            stage ("Test") {
-               echo "Hello from Test"
-               }
-            stage ("Prod") {
-               echo "Hello from Production"
-            }
-         } 
-}
+                   }
+			   }
+         }
+}		 
