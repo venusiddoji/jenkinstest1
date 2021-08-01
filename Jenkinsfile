@@ -13,6 +13,4 @@ pipeline {
             stage ("Prod") {
                echo "Hello from Production"
             }
-         }
-       }
-           
+         } 
